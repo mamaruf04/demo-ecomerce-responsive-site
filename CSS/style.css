@@ -20,12 +20,30 @@ p,span{
 /* -------------
 navigation-area
 ----------------*/
-nav ul li{
-    list-style: none;
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
 }
-nav ul .logo-heading{
+nav ul{
+    display: flex;
+    list-style:none;
+}
+nav ul a{
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 10px;
+    font-size: 16px;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+nav .logo-heading{
     font-size: 24px;
     color: #3A3A3A;
+}
+.fontawsome-nav{
+    font-size: 1.5em;
 }
 /* ------------------
 journey section
@@ -56,11 +74,6 @@ journey section
     padding: 10px 24px;
     border-radius: 40px;
 }
-/* .button-design:hover{
-    color: #E02C6D;
-    background-color: white;
-    border: 1px solid #E02C6D;
-} */
 .fa-arrow-right{
     color: white;
 }
@@ -187,8 +200,14 @@ media Quareis
     /* ------------
     navigation section
     -------------- */
-    nav ul .logo-heading {
-        font-size: 16px;
+    nav .logo-heading {
+        font-size: 1.1em;
+    }
+    nav ul .no-mobile-view{
+        display: none;
+    }
+    .fontawsome-nav{
+        font-size: 1.2em;
     }
     /* --------------
     top section
@@ -248,9 +267,17 @@ media Quareis
  tablet device
  ----------------- */
  @media only screen and (min-width:688px) and (max-width:992px) {
-    /* --------navugation------- */
-    .logo-heading{
-        text-align: center;
+    /* -----------
+    navigation
+    ------------*/
+    nav .logo-heading {
+        font-size: 1.5em;
+    }
+    nav ul .no-mobile-view{
+        display: none;
+    }
+    .fontawsome-nav{
+        font-size: 1.5em;
     }
     /* ------------- 
     top heading
